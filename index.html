@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karl Samson | Computer Engineering Student</title>
+  <meta name="description" content="Portfolio of Karl Samson, a 4th-year Computer Engineering student interested in technology, creativity, AutoCAD, graphic design, video editing, and art.">
+  <meta name="theme-color" content="#0a0a0a">
+
+  <!-- Adds a "js" class so reveal animations only run when JavaScript works -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Google Fonts (optional: the page stays readable if these fail to load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- Page-wide animated background (fixed behind all sections) -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#home" aria-label="Karl Samson, back to top">KS</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills &amp; Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero-wrap">
+      <!-- Decorative: two geometric outlines (the page-wide moving background is the canvas at the top of <body>) -->
+      <span class="shape shape-a" aria-hidden="true"></span>
+      <span class="shape shape-b" aria-hidden="true"></span>
+
+      <div class="hero">
+        <div class="hero-text">
+          <!-- The label text rotates through phrases (script.js) -->
+          <p class="label"><span id="rotator">Computer Engineering Student</span></p>
+          <h1 aria-label="Karl Samson"><span class="line" aria-hidden="true"><span class="ch" style="--i:0">K</span><span class="ch" style="--i:1">A</span><span class="ch" style="--i:2">R</span><span class="ch" style="--i:3">L</span></span><span class="line" aria-hidden="true"><span class="ch" style="--i:4">S</span><span class="ch" style="--i:5">A</span><span class="ch" style="--i:6">M</span><span class="ch" style="--i:7">S</span><span class="ch" style="--i:8">O</span><span class="ch" style="--i:9">N</span></span></h1>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="hero-desc">Exploring technology through a creative eye, from technical drawing and graphic design to video editing and art.</p>
+          <div class="buttons">
+            <a class="btn btn-primary" href="#about">Explore My Portfolio</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <!-- Add your avatar at images/avatar.png. If it is missing, the KS monogram shows instead. -->
+          <figure class="avatar-frame">
+            <span class="avatar-fallback" aria-hidden="true">KS</span>
+            <img src="Image/KSpic.jpg" alt="Cartoon-style avatar of Karl Samson on a black background"
+                 width="480" height="600" onerror="this.remove()">
+          </figure>
+
+          <!-- Picture under the profile: add your photo at images/photo.jpg. If it is missing, this frame is hidden. -->
+          <figure class="photo-frame">
+            <img src="images/photo.jpg" alt="Photo shared by Karl Samson"
+                 width="640" height="400" loading="lazy" onerror="this.closest('figure').remove()">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <h2 class="section-title reveal">About<br>Me</h2>
+        <div class="about-copy reveal">
+          <p>I am Karl Samson, a fourth-year Computer Engineering student with an interest in technology, creativity, and continuous learning. As I continue my journey in Computer Engineering, I aim to expand my knowledge, strengthen my technical skills, and gain experiences that will help me grow personally and professionally.</p>
+          <p>I enjoy exploring different areas of technology and discovering new ways to apply what I learn. I believe that learning is a continuous process, and I am always willing to improve my abilities, take on new challenges, and develop skills that will support my future career.</p>
+          <p>I also value creativity, patience, and attention to detail in everything I do. My goal is to become a skilled professional who combines technical knowledge with creativity to produce meaningful and useful work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & INTERESTS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Skills &amp;<br>Interests</h2>
+
+        <div class="skills-grid">
+          <article class="skill skill-cad reveal" style="--d:0.00s">
+            <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="6" y="6" width="36" height="36"/><path d="M6 20h18M24 20v22M24 30h18M14 6v6M22 6v4M30 6v6"/>
+            </svg>
+            <h3>AutoCAD</h3>
+            <p>Created a floor plan. Interested in developing technical drawing and design skills.</p>
+          </article>
+
+          <article class="skill skill-design reveal" style="--d:0.12s">
+            <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="18" cy="18" r="11"/><rect x="24" y="24" width="18" height="18"/><path d="M8 42l8-14"/>
+            </svg>
+            <h3>Graphic Design</h3>
+            <p>Interested in creating creative and visually appealing designs. Enjoys exploring visual composition and design techniques.</p>
+          </article>
+
+          <article class="skill skill-video reveal" style="--d:0.24s">
+            <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="5" y="9" width="38" height="30"/><path d="M5 17h38M5 31h38M14 9v8M24 9v8M34 9v8M14 31v8M24 31v8M34 31v8M21 21l7 3-7 3z"/>
+            </svg>
+            <h3>Video Editing</h3>
+            <p>Enjoys editing videos. Interested in exploring different editing styles and visual storytelling.</p>
+          </article>
+
+          <article class="skill skill-art reveal" style="--d:0.36s">
+            <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M42 6C30 10 20 20 17 30c-1 4 2 7 6 6 10-3 19-13 19-30z"/><path d="M17 30c-5 0-9 3-9 9 0 2 0 3-2 4 6 1 14 0 17-7"/>
+            </svg>
+            <h3>Arts &amp; Creative Expression</h3>
+            <p>Passionate about art and creative expression. Values creativity and attention to detail.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <p class="live-label reveal"><span class="dot" aria-hidden="true"></span>Available to connect</p>
+        <h2 class="section-title reveal">Let's<br>Connect</h2>
+        <p class="contact-intro reveal">Interested in talking about technology, design, or creative work? Feel free to get in touch.</p>
+
+        <ul class="contact-list reveal">
+          <li>
+            <span>Email</span>
+            <a href="mailto:karlsamson000@gmail.com">karlsamson000@gmail.com</a>
+          </li>
+          <li>
+            <span>X (Twitter)</span>
+            <a href="https://x.com/ksamsn_" target="_blank" rel="noopener noreferrer">@ksamsn_</a>
+          </li>
+          <!-- PHONE: delete this whole <li> to remove the number from your public site -->
+          <li>
+            <span>Phone</span>
+            <a href="tel:+639482789184">09482789184</a>
+          </li>
+          <!-- END PHONE -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Karl Samson</p>
+        <p class="footer-sub">4th-Year Computer Engineering Student</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; <span id="year">2026</span> Karl Samson</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#home" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
